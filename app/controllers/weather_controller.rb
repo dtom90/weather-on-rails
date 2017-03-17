@@ -3,6 +3,8 @@ class WeatherController < ApplicationController
   end
 
   def current
+    response = Weather.new
+    @current_weather = response.weather
   end
 
   def forecast

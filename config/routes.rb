@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'weather/home'
+  root 'weather#home'
 
   get 'weather/current'
 
