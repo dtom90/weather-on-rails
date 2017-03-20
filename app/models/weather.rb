@@ -11,7 +11,7 @@ class Weather
   end
   
   def weather
-    pp @response
+    # pp @response
     @response['current_observation']['weather']
   end
   
