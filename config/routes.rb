@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   root 'weather#home'
 
-  get 'weather/current'
-
-  get 'weather/forecast'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'current', to: 'weather#current'
+  get 'forecast', to: 'weather#forecast'
 end
