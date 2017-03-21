@@ -1,8 +1,10 @@
 require 'rails_helper'
 
+WU_LOGO_ID = '#wunderground_logo'
+
 def has_wul_logo
-  expect(page).to have_selector('img#weather_underground_logo')
-  expect(page.find('#weather_underground_logo')['src']).to have_content 'wundergroundLogo_4c_horz'
+  expect(page).to have_selector('img')
+  expect(page.find(WU_LOGO_ID)['src']).to have_content 'wundergroundLogo'
 end
 
 describe 'home page' do

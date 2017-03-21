@@ -1,3 +1,31 @@
 // Place all the styles related to the weather controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body { 
+  font-family: Avenir, serif; 
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  
+  background: #111111;
+}
+
+.footer-content {
+  height: 100%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;       /* the same as your div height */
+  margin-right: 20px;
+}
+
+.footer-content * {
+  height: 100%;
+}
