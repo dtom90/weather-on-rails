@@ -1,5 +1,5 @@
-<%= form_for :weather, url: { action: 'current' }, method: :get do |f| %>
-    <%= f.label :location %>
-    <%= f.text_field :location %>
+<%= form_tag '/current', method: :get do %>
+    <%= label_tag :location %>
+    <%= text_field_tag :location %>
     <button type="submit" class="btn btn-default">Submit</button>
 <% end %>
